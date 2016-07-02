@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+            <string>Montserrat-Regular</string>
+            <string>Montserrat-Regular</string>
+            <string>Montserrat-Regular</string>
+            <string>Montserrat-Regular</string>
+            <string>Montserrat-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VideoPlayerVC">
+            <connections>
+                <outlet property="CH_commentsBtn" destination="yD7-MD-Nzc" id="NAm-kC-75o"/>
+                <outlet property="CH_heart" destination="ChY-KO-qiX" id="brl-SF-REu"/>
+                <outlet property="VideoTitle" destination="aaJ-mH-I8t" id="bK1-1S-Kn6"/>
+                <outlet property="commentsCount" destination="W9G-yc-Bbj" id="fN5-8D-YVB"/>
+                <outlet property="containerView" destination="WuV-aj-Tqk" id="mXF-7M-ifU"/>
+                <outlet property="contentView" destination="wVo-2n-QmD" id="84R-zV-mPF"/>
+                <outlet property="fbAndTwitterView" destination="XLg-PD-UkJ" id="3TP-Ft-de7"/>
+                <outlet property="likesCount" destination="El2-0e-0qw" id="NwZ-VM-Jsz"/>
+                <outlet property="profileImage" destination="3N6-gb-Qbj" id="Bla-m3-TKo"/>
+                <outlet property="shareView" destination="Wu4-xj-b75" id="AdY-V6-s6M"/>
+                <outlet property="startRating" destination="fXj-KM-nzz" id="7fJ-r2-JGd"/>
+                <outlet property="titleLbl" destination="O6I-71-9BW" id="6Sd-XH-rwj"/>
+                <outlet property="upperView" destination="9NN-MA-yhA" id="J9c-HU-cKj"/>
+                <outlet property="username" destination="MoZ-XX-ONk" id="Jge-uG-t2R"/>
+                <outlet property="view" destination="zvk-DC-r9b" id="xNl-Hd-zYL"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="zvk-DC-r9b">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="Nau-Mi-NPA">
+                    <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wVo-2n-QmD">
+                    <rect key="frame" x="0.0" y="87" width="768" height="937"/>
+                    <subviews>
+                        <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="loading.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="3N6-gb-Qbj" customClass="AsyncImageView">
+                            <rect key="frame" x="190" y="114" width="90" height="90"/>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WuV-aj-Tqk">
+                            <rect key="frame" x="0.0" y="0.0" width="768" height="937"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pGd-0B-58f">
+                            <rect key="frame" x="14" y="800" width="741" height="125"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W9G-yc-Bbj">
+                                    <rect key="frame" x="655" y="61" width="35" height="35"/>
+                                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="15"/>
+                                    <color key="textColor" red="0.21176470589999999" green="0.30588235289999999" blue="0.55294117649999996" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yD7-MD-Nzc">
+                                    <rect key="frame" x="650" y="20" width="40" height="40"/>
+                                    <state key="normal" backgroundImage="comment_tt.png"/>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HydePark Channel" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MoZ-XX-ONk">
+                                    <rect key="frame" x="20" y="21" width="291" height="26"/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                    <color key="textColor" red="0.21176470589999999" green="0.30588235289999999" blue="0.55294117649999996" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fXj-KM-nzz" customClass="EDStarRating">
+                                    <rect key="frame" x="20" y="55" width="240" height="51"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </view>
+                                <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VDN-Vs-bG8">
+                                    <rect key="frame" x="203" y="0.0" width="365" height="125"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="El2-0e-0qw">
+                                            <rect key="frame" x="308" y="70" width="35" height="35"/>
+                                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="15"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aaJ-mH-I8t">
+                                            <rect key="frame" x="20" y="45" width="179" height="48"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ChY-KO-qiX">
+                                            <rect key="frame" x="305" y="20" width="40" height="35"/>
+                                            <state key="normal" backgroundImage="likenew.png">
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="125" id="VXE-Vu-dpB"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="WuV-aj-Tqk" firstAttribute="top" secondItem="wVo-2n-QmD" secondAttribute="top" id="07w-E7-FGz"/>
+                        <constraint firstItem="WuV-aj-Tqk" firstAttribute="leading" secondItem="wVo-2n-QmD" secondAttribute="leading" id="2m8-J3-HLW"/>
+                        <constraint firstItem="pGd-0B-58f" firstAttribute="leading" secondItem="wVo-2n-QmD" secondAttribute="leading" constant="14" id="ggz-Uh-QXL"/>
+                        <constraint firstAttribute="trailing" secondItem="pGd-0B-58f" secondAttribute="trailing" constant="13" id="hwk-hP-EKQ"/>
+                        <constraint firstAttribute="bottom" secondItem="pGd-0B-58f" secondAttribute="bottom" constant="12" id="qm8-vq-trD"/>
+                        <constraint firstAttribute="trailing" secondItem="WuV-aj-Tqk" secondAttribute="trailing" id="t5v-qW-XM4"/>
+                        <constraint firstAttribute="bottom" secondItem="WuV-aj-Tqk" secondAttribute="bottom" id="xKC-vE-yOF"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9NN-MA-yhA">
+                    <rect key="frame" x="0.0" y="0.0" width="768" height="86"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O6I-71-9BW">
+                            <rect key="frame" x="184" y="31" width="400" height="35"/>
+                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="22"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dkm-MB-iUJ">
+                            <rect key="frame" x="15" y="31" width="35" height="35"/>
+                            <state key="normal" backgroundImage="backwhite.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="back:" destination="-1" eventType="touchUpInside" id="sN3-ff-Kr3"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.21176470589999999" green="0.30588235289999999" blue="0.55294117649999996" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="86" id="Kyt-kL-t0z"/>
+                    </constraints>
+                </view>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wu4-xj-b75">
+                    <rect key="frame" x="0.0" y="87" width="768" height="789"/>
+                    <subviews>
+                        <view opaque="NO" alpha="0.60000002384185791" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oje-Rd-QZ8">
+                            <rect key="frame" x="0.0" y="0.0" width="768" height="789"/>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dZ7-h5-FiE">
+                            <rect key="frame" x="650" y="50" width="60" height="60"/>
+                            <state key="normal" image="worldwide-share.png"/>
+                            <state key="highlighted" image="worldwide-sharePressed.png"/>
+                            <connections>
+                                <action selector="sharePressed:" destination="-1" eventType="touchUpInside" id="7Nt-PQ-7D7"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hnr-NG-GQK">
+                            <rect key="frame" x="344" y="355" width="80" height="80"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="80" id="4qW-vw-Qab"/>
+                                <constraint firstAttribute="width" constant="80" id="ZWy-Me-e4Z"/>
+                            </constraints>
+                            <state key="normal" image="replay.png"/>
+                            <connections>
+                                <action selector="replayPressed:" destination="-1" eventType="touchUpInside" id="44f-LB-ln6"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="hnr-NG-GQK" firstAttribute="centerY" secondItem="Wu4-xj-b75" secondAttribute="centerY" id="9yP-gW-WAJ"/>
+                        <constraint firstItem="oje-Rd-QZ8" firstAttribute="top" secondItem="Wu4-xj-b75" secondAttribute="top" id="NG9-rY-AbK"/>
+                        <constraint firstItem="oje-Rd-QZ8" firstAttribute="leading" secondItem="Wu4-xj-b75" secondAttribute="leading" id="Y2C-oK-E1R"/>
+                        <constraint firstItem="hnr-NG-GQK" firstAttribute="centerX" secondItem="Wu4-xj-b75" secondAttribute="centerX" id="dBu-wr-deq"/>
+                        <constraint firstAttribute="bottom" secondItem="oje-Rd-QZ8" secondAttribute="bottom" id="jCk-Yz-hdk"/>
+                        <constraint firstAttribute="trailing" secondItem="oje-Rd-QZ8" secondAttribute="trailing" id="pjL-0v-4df"/>
+                    </constraints>
+                </view>
+                <view hidden="YES" opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XLg-PD-UkJ">
+                    <rect key="frame" x="196" y="179" width="375" height="667"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dialogbg_celebMenu.png" translatesAutoresizingMaskIntoConstraints="NO" id="NLo-DP-Kdc">
+                            <rect key="frame" x="-49" y="126" width="472" height="415"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select an Option" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M5O-oA-3M8">
+                            <rect key="frame" x="83" y="274" width="208" height="21"/>
+                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="20"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo_celebMenu.png" translatesAutoresizingMaskIntoConstraints="NO" id="Uvn-xR-Gm4">
+                            <rect key="frame" x="147" y="170" width="80" height="80"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="buttonbg_celebMenu.png" translatesAutoresizingMaskIntoConstraints="NO" id="QGm-iW-TBz">
+                            <rect key="frame" x="50" y="321" width="275" height="60"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="buttonbg_celebMenu.png" translatesAutoresizingMaskIntoConstraints="NO" id="TgN-sR-tAR">
+                            <rect key="frame" x="50" y="414" width="275" height="60"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ZS-ed-RMu">
+                            <rect key="frame" x="66" y="328" width="243" height="45"/>
+                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
+                            <state key="normal" title="Facebook"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OWQ-GT-ZNs">
+                            <rect key="frame" x="68" y="423" width="238" height="45"/>
+                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
+                            <state key="normal" title="Twitter"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="667" id="IOK-FI-T5e"/>
+                        <constraint firstAttribute="width" constant="375" id="hvK-ni-e8G"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Wu4-xj-b75" secondAttribute="trailing" id="05L-hS-1h2"/>
+                <constraint firstItem="wVo-2n-QmD" firstAttribute="leading" secondItem="zvk-DC-r9b" secondAttribute="leading" id="155-ce-ACe"/>
+                <constraint firstItem="Nau-Mi-NPA" firstAttribute="top" secondItem="zvk-DC-r9b" secondAttribute="top" id="4ze-X5-jbn"/>
+                <constraint firstItem="wVo-2n-QmD" firstAttribute="top" secondItem="9NN-MA-yhA" secondAttribute="bottom" constant="1" id="6UV-0x-CAP"/>
+                <constraint firstItem="XLg-PD-UkJ" firstAttribute="centerY" secondItem="zvk-DC-r9b" secondAttribute="centerY" id="9VD-SZ-h1b"/>
+                <constraint firstAttribute="bottom" secondItem="Nau-Mi-NPA" secondAttribute="bottom" id="K1p-wB-fou"/>
+                <constraint firstAttribute="trailing" secondItem="wVo-2n-QmD" secondAttribute="trailing" id="Lxs-rF-1q3"/>
+                <constraint firstItem="Nau-Mi-NPA" firstAttribute="leading" secondItem="zvk-DC-r9b" secondAttribute="leading" id="QBy-ge-XRP"/>
+                <constraint firstItem="9NN-MA-yhA" firstAttribute="top" secondItem="zvk-DC-r9b" secondAttribute="top" id="YiR-Hr-PG2"/>
+                <constraint firstItem="XLg-PD-UkJ" firstAttribute="centerX" secondItem="zvk-DC-r9b" secondAttribute="centerX" id="b9J-8x-BR8"/>
+                <constraint firstAttribute="trailing" secondItem="Nau-Mi-NPA" secondAttribute="trailing" id="cfu-KM-h4M"/>
+                <constraint firstItem="Wu4-xj-b75" firstAttribute="top" secondItem="9NN-MA-yhA" secondAttribute="bottom" constant="1" id="gSD-fp-ur1"/>
+                <constraint firstAttribute="trailing" secondItem="9NN-MA-yhA" secondAttribute="trailing" id="ggp-pS-vC3"/>
+                <constraint firstItem="9NN-MA-yhA" firstAttribute="leading" secondItem="zvk-DC-r9b" secondAttribute="leading" id="je5-zf-5eK"/>
+                <constraint firstAttribute="bottom" secondItem="Wu4-xj-b75" secondAttribute="bottom" constant="148" id="lEm-ax-UZG"/>
+                <constraint firstItem="Wu4-xj-b75" firstAttribute="leading" secondItem="zvk-DC-r9b" secondAttribute="leading" id="qcA-wn-3SK"/>
+                <constraint firstAttribute="bottom" secondItem="wVo-2n-QmD" secondAttribute="bottom" id="vYk-0U-MSD"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+            <point key="canvasLocation" x="311" y="334"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="backwhite.png" width="114" height="114"/>
+        <image name="bg.png" width="540" height="960"/>
+        <image name="buttonbg_celebMenu.png" width="158" height="33"/>
+        <image name="comment_tt.png" width="137" height="137"/>
+        <image name="dialogbg_celebMenu.png" width="208" height="241"/>
+        <image name="likenew.png" width="128" height="118"/>
+        <image name="loading.jpg" width="720" height="602"/>
+        <image name="logo_celebMenu.png" width="45" height="45"/>
+        <image name="replay.png" width="128" height="128"/>
+        <image name="worldwide-share.png" width="64" height="64"/>
+        <image name="worldwide-sharePressed.png" width="64" height="64"/>
+    </resources>
+</document>

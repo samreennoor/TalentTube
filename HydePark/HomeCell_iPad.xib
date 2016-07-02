@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+            <string>Montserrat-Regular</string>
+            <string>Montserrat-Regular</string>
+            <string>Montserrat-Regular</string>
+            <string>Montserrat-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeCell">
+            <connections>
+                <outlet property="userProfileView" destination="c53-pm-pvE" id="bne-ej-9vo"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="pT6-QH-Psm" customClass="HomeCell">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="400"/>
+            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pT6-QH-Psm" id="Qr5-S1-QYf">
+                <rect key="frame" x="0.0" y="0.0" width="768" height="399"/>
+                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" id="BOh-ju-dJd">
+                        <rect key="frame" x="50" y="77" width="666" height="250"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_tt" id="B7g-HD-6la" customClass="AsyncImageView">
+                                <rect key="frame" x="0.0" y="0.0" width="666" height="243"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.23137254900000001" green="0.35294117650000001" blue="0.58039215690000001" alpha="0.61058728449999999" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <view alpha="0.15000000596046448" contentMode="scaleToFill" id="0dA-Ec-6Ni">
+                                <rect key="frame" x="0.0" y="-77" width="666" height="320"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_tt" id="uOT-tY-3Hm" customClass="AsyncImageView">
+                        <rect key="frame" x="50" y="9" width="59" height="60"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="0.23137254900000001" green="0.35294117650000001" blue="0.58039215690000001" alpha="0.61058728449999999" colorSpace="calibratedRGB"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dots_tt" id="NOE-vu-2kD">
+                        <rect key="frame" x="657" y="14" width="24" height="45"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yeah Whatever" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="eYd-wt-Yxg">
+                        <rect key="frame" x="116" y="7" width="302" height="26"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
+                        <color key="textColor" red="0.21176470589999999" green="0.30588235289999999" blue="0.55294117649999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hey there Dililah" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mVN-Ez-MJM">
+                        <rect key="frame" x="116" y="32" width="302" height="27"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
+                        <color key="textColor" red="0.1769347735" green="0.45000524330000002" blue="0.84519190440000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view hidden="YES" contentMode="scaleToFill" id="zbi-UL-xeB">
+                        <rect key="frame" x="326" y="313" width="292" height="82"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="7Qx-sq-q0d">
+                                <rect key="frame" x="228" y="20" width="44" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="viewsN.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5Gg-gX-3DI">
+                                <rect key="frame" x="69" y="25" width="60" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="BTX-o3-Dfn">
+                                <rect key="frame" x="20" y="23" width="40" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="likenew.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="iAm-Jq-W0r">
+                                <rect key="frame" x="116" y="26" width="60" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mY7-yV-GKq">
+                                <rect key="frame" x="45" y="29" width="202" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="playicon.png" id="cbz-0I-q48">
+                        <rect key="frame" x="359" y="163" width="50" height="50"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="m8f-Uz-Beg">
+                        <rect key="frame" x="346" y="203" width="76" height="50"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="TMB-pi-ojB">
+                        <rect key="frame" x="0.0" y="77" width="768" height="238"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <state key="normal">
+                            <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Sht-xn-a0r">
+                        <rect key="frame" x="645" y="361" width="60" height="30"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="15"/>
+                        <color key="textColor" red="0.1769347735" green="0.45000524330000002" blue="0.84519190440000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" id="lY7-O2-cP3" customClass="EDStarRating">
+                        <rect key="frame" x="63" y="335" width="289" height="51"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="KBJ-N9-BAl">
+                        <rect key="frame" x="651" y="330" width="41" height="30"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        <state key="normal" image="comment_tt.png">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <state key="disabled" backgroundImage="commentnew.png"/>
+                        <state key="highlighted" backgroundImage="commentsblue.png"/>
+                    </button>
+                    <view contentMode="scaleToFill" id="etN-WD-N98">
+                        <rect key="frame" x="33" y="395" width="702" height="1"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="dDD-SB-aHL">
+                        <rect key="frame" x="635" y="9" width="65" height="50"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="c53-pm-pvE">
+                        <rect key="frame" x="42" y="7" width="75" height="62"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="CH_CommentscountLbl" destination="Sht-xn-a0r" id="aJv-Wb-dSC"/>
+                <outlet property="CH_VideoTitle" destination="mVN-Ez-MJM" id="fgI-hZ-ccY"/>
+                <outlet property="CH_Video_Thumbnail" destination="B7g-HD-6la" id="tJY-KN-wZY"/>
+                <outlet property="CH_commentsBtn" destination="KBJ-N9-BAl" id="fLE-rs-GPg"/>
+                <outlet property="CH_flag" destination="7Qx-sq-q0d" id="e9q-iG-ua3"/>
+                <outlet property="CH_hashTags" destination="mY7-yV-GKq" id="Eca-5k-D0t"/>
+                <outlet property="CH_playVideo" destination="TMB-pi-ojB" id="E8I-X2-xGf"/>
+                <outlet property="CH_profileImage" destination="uOT-tY-3Hm" id="zqm-v0-xNf"/>
+                <outlet property="CH_userName" destination="eYd-wt-Yxg" id="BTk-nV-AwC"/>
+                <outlet property="btnMenu" destination="dDD-SB-aHL" id="8wi-uL-Jkz"/>
+                <outlet property="heart" destination="BTX-o3-Dfn" id="LMp-Dy-nLq"/>
+                <outlet property="heartCountlbl" destination="5Gg-gX-3DI" id="dKU-JK-LCS"/>
+                <outlet property="seenLbl" destination="iAm-Jq-W0r" id="Ff6-JV-itF"/>
+                <outlet property="startRating" destination="lY7-O2-cP3" id="FnJ-bt-Mr5"/>
+                <outlet property="videoLength" destination="m8f-Uz-Beg" id="XNN-PC-3ZZ"/>
+                <outlet property="viewToRound" destination="BOh-ju-dJd" id="S40-bD-9id"/>
+            </connections>
+            <point key="canvasLocation" x="553" y="158"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="comment_tt.png" width="137" height="137"/>
+        <image name="commentnew.png" width="128" height="128"/>
+        <image name="commentsblue.png" width="128" height="128"/>
+        <image name="dots_tt" width="15" height="59"/>
+        <image name="likenew.png" width="128" height="118"/>
+        <image name="logo_tt" width="316" height="386"/>
+        <image name="playicon.png" width="130" height="130"/>
+        <image name="viewsN.png" width="256" height="256"/>
+    </resources>
+</document>
